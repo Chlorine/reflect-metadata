@@ -1491,7 +1491,8 @@ namespace Reflect {
         // https://tc39.github.io/ecma262/#sec-isconstructor
         function IsConstructor(argument: any): argument is Function {
             // NOTE: This is an approximation as we cannot check for [[Construct]] internal method.
-            return typeof argument === "function";
+            // временный фикс от chlorine
+            return typeof argument === "function"  || argument.constructor;
         }
 
         // 7.2.7 IsPropertyKey(argument)
