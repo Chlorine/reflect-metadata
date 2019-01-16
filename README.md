@@ -1,3 +1,6 @@
+Привет!
+Я [временно] подфиксю один файлик согласно https://github.com/dkuida/moleculer-db-adapter-typeorm/issues/10#issuecomment-451384653
+
 # Metadata Reflection API
 
 * [Detailed proposal][Metadata-Spec]
